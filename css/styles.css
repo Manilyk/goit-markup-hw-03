@@ -8,6 +8,27 @@
     --cloud: #F4F4FD;
     --ocean: #404bbf;
 }
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+
+/* Ensure accessibility by providing a clear focus indicator */
+button:focus {
+    outline: auto 1px blue;
+}
+.container {
+    max-width: 1080px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--white);
@@ -15,11 +36,28 @@ body {
 }
 button {cursor: pointer;}
 
-ul {list-style: none;}
-a {text-decoration: none;}
+ul {
+list-style: none;
+margin-bottom: 0;
+margin-top: 0;
+padding-left: 0;
+}
+a {
+text-decoration: none;
+color: currentColor;
+}
+address {
+    font-style: normal;
+}
 
 /*-----header-----*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .header-logo {
+    padding-top: 25px;
+    padding-bottom: 26px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
@@ -64,8 +102,17 @@ color: var(--ocean);
 }
  /*-----hero-----*/
 .hero {
-background: var(--navy-blue);
 }
+.container-hero {
+    width: 1440px;
+        height: 600px;
+    }
+
+.hero-content{
+    background: var(--navy-blue);
+    padding: 185px 473px 295px 471px;
+}
+
 .hero-title {
     font-family: var(--font-family);
     font-weight: 700;
@@ -76,16 +123,22 @@ background: var(--navy-blue);
     text-align: center;
     color: var(--white);
 }
+
 .hero-btn {
+border-radius: 4px;
+    padding: 16px 32px;
+    /*width: 169px;*/
+    height: 56px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    /* line-height: 24px; */
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white);
-    background-color: #4D5AE5
+    background-color: #4D5AE5;
+    box-sizing: border-box;
 }
+
 .hero-btn:hover, .hero-btn:focus {
 background-color: #404BBF;}
     /*-----advantages-----*/

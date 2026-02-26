@@ -8,6 +8,7 @@
     --cloud: #F4F4FD;
     --ocean: #404bbf;
     --cornflower: #E7E9FC;
+    --grey: rgba(46, 47, 66, 0.7);
 }
 * {
     list-style: none;
@@ -149,7 +150,10 @@ padding-left: 10px;
 }
 
 .hero-content {
-    background: var(--navy-blue);
+    background-image:linear-gradient(var(--grey), var(--grey)),
+     url(/images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--navy-blue);
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -383,9 +387,13 @@ display: block;
     border-right: 1px solid var(--cornflower);
     }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .portfolio-item-img {
-    display: block;
     flex-shrink: 0;
     display: flex;
     box-sizing: border-box;
